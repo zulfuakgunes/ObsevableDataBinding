@@ -7,16 +7,20 @@
 
 import Foundation
 
-final class ObsevableObject<T>{
-    var value: T?
+final class ObservableObject<T>{
+    var value: T {
+        didSet{
+            listener?(value)
+        }
+    }
     
-    var listener: ((T?) -> Void)?
+    var listener: ((T) -> Void)?
     
-    init(value: T? = nil) {
+    init(_ value: T) {
         self.value = value
     }
     
-    func binding(_ listener: @escaping (T?) -> Void){
+    func binding(_ listener: @escaping (T) -> Void){
         listener(value)
         
         self.listener = listener

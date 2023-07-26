@@ -18,6 +18,8 @@
 		6A275D562A71245C0046457D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A275D552A71245C0046457D /* LoginViewModel.swift */; };
 		6A275D592A7125B20046457D /* ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A275D582A7125B20046457D /* ObservableObject.swift */; };
 		6A275D5D2A712C0F0046457D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A275D5C2A712C0F0046457D /* NetworkService.swift */; };
+		6A275D602A712EA40046457D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A275D5F2A712EA40046457D /* User.swift */; };
+		6A275D622A71431E0046457D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A275D612A71431E0046457D /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		6A275D552A71245C0046457D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		6A275D582A7125B20046457D /* ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObject.swift; sourceTree = "<group>"; };
 		6A275D5C2A712C0F0046457D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		6A275D5F2A712EA40046457D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6A275D612A71431E0046457D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +72,9 @@
 			children = (
 				6A275D4C2A711D880046457D /* Extensions */,
 				6A275D4F2A711EE10046457D /* Scene */,
-				6A275D542A7124460046457D /* LoginView */,
-				6A275D572A71247B0046457D /* HomeView */,
 				6A275D5B2A712BA70046457D /* NetworkService */,
 				6A275D582A7125B20046457D /* ObservableObject.swift */,
+				6A275D5E2A712E7F0046457D /* Models */,
 				6A275D5A2A712B240046457D /* Folders */,
 			);
 			path = ObsevableDataBinding;
@@ -88,6 +91,8 @@
 		6A275D4F2A711EE10046457D /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				6A275D542A7124460046457D /* LoginView */,
+				6A275D572A71247B0046457D /* HomeView */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				6A275D522A711F8B0046457D /* HomeViewController.swift */,
+				6A275D612A71431E0046457D /* HomeViewModel.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -128,6 +134,14 @@
 				6A275D5C2A712C0F0046457D /* NetworkService.swift */,
 			);
 			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		6A275D5E2A712E7F0046457D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6A275D5F2A712EA40046457D /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,8 +218,10 @@
 				6A275D532A711F8B0046457D /* HomeViewController.swift in Sources */,
 				6A275D512A711F160046457D /* LoginViewController.swift in Sources */,
 				6A275D5D2A712C0F0046457D /* NetworkService.swift in Sources */,
+				6A275D622A71431E0046457D /* HomeViewModel.swift in Sources */,
 				6A275D562A71245C0046457D /* LoginViewModel.swift in Sources */,
 				6A275D4E2A711DA60046457D /* UIView + Extension.swift in Sources */,
+				6A275D602A712EA40046457D /* User.swift in Sources */,
 				6A275D592A7125B20046457D /* ObservableObject.swift in Sources */,
 				6A275D392A7119D80046457D /* AppDelegate.swift in Sources */,
 				6A275D3B2A7119D80046457D /* SceneDelegate.swift in Sources */,

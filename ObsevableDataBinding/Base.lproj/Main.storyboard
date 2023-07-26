@@ -57,10 +57,10 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lT2-rb-m5Y">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lT2-rb-m5Y">
                                                 <rect key="frame" x="10" y="25.333333333333314" width="333" height="34"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <nil key="textColor"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -110,7 +110,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
-                        <outlet property="nameTextfield" destination="vb7-8T-CLd" id="6qB-Zl-nhd"/>
+                        <outlet property="emailTextfield" destination="vb7-8T-CLd" id="6qB-Zl-nhd"/>
                         <outlet property="passwordTextfield" destination="lT2-rb-m5Y" id="Tll-qr-zBm"/>
                     </connections>
                 </viewController>
@@ -121,13 +121,13 @@
         <!--Home View Controller-->
         <scene sceneID="k0Y-JC-OkK">
             <objects>
-                <viewController id="y40-DM-Gc8" customClass="HomeViewController" customModule="ObsevableDataBinding" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="y40-DM-Gc8" customClass="HomeViewController" customModule="ObsevableDataBinding" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DN9-DW-ufO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukP-76-Ghl">
-                                <rect key="frame" x="82.333333333333329" y="159" width="228.66666666666669" height="38.333333333333343"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Home" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukP-76-Ghl">
+                                <rect key="frame" x="10" y="159" width="373" height="38.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -138,6 +138,8 @@
                         <constraints>
                             <constraint firstItem="ukP-76-Ghl" firstAttribute="top" secondItem="7gH-oj-v86" secondAttribute="top" constant="100" id="0C5-u2-xNK"/>
                             <constraint firstItem="ukP-76-Ghl" firstAttribute="centerX" secondItem="7gH-oj-v86" secondAttribute="centerX" id="1TH-2Z-ZjB"/>
+                            <constraint firstItem="ukP-76-Ghl" firstAttribute="leading" secondItem="7gH-oj-v86" secondAttribute="leading" constant="10" id="fRL-Zw-44v"/>
+                            <constraint firstItem="7gH-oj-v86" firstAttribute="trailing" secondItem="ukP-76-Ghl" secondAttribute="trailing" constant="10" id="hli-4K-FZz"/>
                         </constraints>
                     </view>
                     <connections>
