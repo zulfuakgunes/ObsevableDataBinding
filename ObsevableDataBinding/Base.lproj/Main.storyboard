@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="117" y="33"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="k0Y-JC-OkK">
             <objects>
-                <viewController id="y40-DM-Gc8" sceneMemberID="viewController">
+                <viewController id="y40-DM-Gc8" customClass="HomeViewController" customModule="ObsevableDataBinding" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DN9-DW-ufO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,10 +140,13 @@
                             <constraint firstItem="ukP-76-Ghl" firstAttribute="centerX" secondItem="7gH-oj-v86" secondAttribute="centerX" id="1TH-2Z-ZjB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="ukP-76-Ghl" id="ned-i4-E4m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q2I-dK-X1m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1043" y="51"/>
+            <point key="canvasLocation" x="1042" y="32"/>
         </scene>
     </scenes>
     <resources>
