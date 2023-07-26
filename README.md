@@ -1,4 +1,4 @@
 ObsevableDataBinding
 
-![LoginPage ScreenShot](Ekran Resmi 2023-07-26 18.42.40.png)
-![HomePage ScreenShot](Ekran Resmi 2023-07-26 18.43.42.png)
+![LoginPage ScreenShot](https://github.com/zulfuakgunes/ObsevableDataBinding/blob/main/Ekran%20Resmi%202023-07-26%2018.42.40.png)
+![HomePage ScreenShot](https://github.com/zulfuakgunes/ObsevableDataBinding/blob/main/Ekran%20Resmi%202023-07-26%2018.43.42.png)
