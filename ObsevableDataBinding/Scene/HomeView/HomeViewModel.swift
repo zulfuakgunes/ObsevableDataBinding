@@ -6,7 +6,7 @@ final class HomeViewModel{
     
     func getLoggedInUser(){
        let user = NetworkService.shared.getLoggedInUser()
-        self.welcomeMessage.value = "Hello, \(user.firsName!)  \(user.LastName!)"
+        self.welcomeMessage.value = "Hello World"
     }
     
 }
